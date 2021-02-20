@@ -1,123 +1,121 @@
 @import "no-js";
 
 .bilberry-hugo-theme {
-    background-color: $page-background-color;
-    font-family: $content-font;
-    color: $text-color;
-    font-size: 1.6em;
+  background-color: $page-background-color;
+  font-family: $content-font;
+  color: $text-color;
+  font-size: 1.6em;
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    .title,
-    .subtitle {
-        font-family: $headline-font;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .title,
+  .subtitle {
+    font-family: $headline-font;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      color: $highlight-color;
     }
 
-    a {
-        color: inherit;
-        text-decoration: none;
-        transition: all 0.2s ease-in-out;
-
-        &:hover {
-            color: $highlight-color;
-        }
-
-        &:focus {
-            outline: none;
-        }
+    &:focus {
+      outline: none;
     }
+  }
 
-    pre {
-        position: relative;
-
-        code {
-            padding: 0.75em;
-            font-size: 0.9em;
-            white-space: pre;
-            overflow-x: auto;
-        }
-
-        .copy-button {
-            display: none;
-            position: absolute;
-            top: 5px;
-            right: 5px;
-            background: #f1f1f1;
-            padding: 4px;
-            font-size: 12pt;
-            line-height: normal;
-            height: auto;
-        }
-
-        &:hover .copy-button {
-            display: block;
-        }
-    }
+  pre {
+    position: relative;
 
     code {
+      padding: 0.75em;
+      font-size: 0.9em;
+      white-space: pre;
+      overflow-x: auto;
+    }
+
+    .copy-button {
+      display: none;
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      background: #f1f1f1;
+      padding: 4px;
+      font-size: 12pt;
+      line-height: normal;
+      height: auto;
+    }
+
+    &:hover .copy-button {
+      display: block;
+    }
+  }
+
+  code {
         font-family: 'Fira Code', monospace;
-        border: 0;
-        margin: 0;
-        white-space: normal;
+    border: 0;
+    margin: 0;
+    white-space: normal;
+    background: $green;
+    color: $background;
+  }
+
+  .tooltipster-light {
+    font-size: 0.75em;
+
+    .tooltipster-content {
+      padding: 6px 10px;
     }
+  }
 
-    .tooltipster-light {
-        font-size: 0.75em;
+  .bubble .fas {
+    font-size: 15pt;
+  }
 
-        .tooltipster-content {
-            padding: 6px 10px;
-        }
-    }
+  .container {
+    width: $site-width;
+    max-width: 100%;
+  }
 
-    .bubble .fas {
-        font-size: 15pt;
-    }
+  .ulist {
+    // Fix for asciidoctor-html5s
+    padding-left: 1em;
+  }
 
+  ul {
+    list-style: circle;
+    padding-left: inherit;
+  }
 
-    .container {
-        width: $site-width;
-        max-width: 100%;
-    }
-
-    .ulist {
-        // Fix for asciidoctor-html5s
-        padding-left: 1em;
-    }
-
+  .flexslider {
+    ol,
     ul {
-        list-style: circle;
-        padding-left: inherit;
+      list-style: none;
     }
+  }
 
-    .flexslider {
+  .fa-youtube-adblock-proof:before {
+    content: "\F167";
+  }
 
-        ol,
-        ul {
-            list-style: none;
-        }
-    }
+  @import "topnav";
 
+  @import "header";
 
-    .fa-youtube-adblock-proof:before {
-        content: "\F167";
-    }
+  @import "main";
 
+  @import "articles";
 
-    @import "topnav";
+  @import "pagination";
 
-    @import "header";
+  @import "footer";
 
-    @import "main";
-
-    @import "articles";
-
-    @import "pagination";
-
-    @import "footer";
-
-    @import "responsive";
+  @import "responsive";
 }

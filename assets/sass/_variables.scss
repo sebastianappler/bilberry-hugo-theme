@@ -2,52 +2,55 @@
 // Notice that the actual content's width is $site-width - 100px
 $site-width: 800px;
 
-$headline-font: 'Comfortaa',
-sans-serif;
-$content-font: 'Open Sans',
-sans-serif;
-$article-footer-font: 'Fira Code',
-monospace;
+$headline-font: "Comfortaa", sans-serif;
+$content-font: "Open Sans", sans-serif;
+$article-footer-font: "Fira Code", monospace;
+
+$background: #282a36;
+$background-second: #383a59;
+$blue: #6272a4;
+$white: #f2f2f2;
+$pink: #ff79c6;
+$green: #50fa7b;
 
 // main colors
-$page-background-color: #f1f1f1;
-$base-color: #1d1f38;
-$special-color: #2D3642;
-$highlight-color: #5c8b59;
-$text-color: #222;
+$page-background-color: $background;
+$base-color: $background-second;
+$special-color: $background-second;
+$highlight-color: $pink;
+$text-color: $white;
 
 // easy styling
-$nav-background-color: $special-color;
-$nav-text-color: $page-background-color;
-$algolia-search-box-color: #444;
-$algolia-search-box-icon-color: #888;
-$algolia-search-box-background-color: #fafafa;
-$algolia-border-color: #e4e4e4;
+$nav-background-color: $background;
+$nav-text-color: $white;
+$algolia-search-box-color: $white;
+$algolia-search-box-icon-color: $pink;
+$algolia-search-box-background-color: $background;
+$algolia-border-color: $pink;
 
-$header-text-color: $page-background-color;
-$logo-color: darken($page-background-color, 1);
-$bubble-color: #fff;
-$bubble-background-color: #ccc;
-$bubble-hover-color: $highlight-color;
+$header-text-color: $white;
+$logo-color: $background-second;
+$bubble-color: $pink;
+$bubble-background-color: $background;
+$bubble-hover-color: transparent;
 
-$article-background-color: #fff;
-$meta-text-color: #999;
-$meta-border-color: #eee;
-$continue-reading-hover-color: $meta-text-color;
+$article-background-color: $background-second;
+$meta-text-color: $blue;
+$meta-border-color: $pink;
+$continue-reading-hover-color: $pink;
 
-$footer-border-color: #eee;
-$footer-background-color: rgba(#ffffff, 80);
-$footer-headline-color: #444;
-
+$footer-border-color: $pink;
+$footer-background-color: $background-second;
+$footer-headline-color: $blue;
 
 @mixin featuredImage() {
-    .featured-image {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 5;
-        opacity: 0.25;
-    }
+  .featured-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    opacity: 0.25;
+  }
 }
