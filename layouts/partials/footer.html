@@ -9,7 +9,10 @@
                 {{ $dontRender :=  (slice "page" "quote" "link" "status") }}
                 {{ range (first (.Site.Params.amountLatestPostsInFooter | default 7) (where (where .Site.Pages.ByPublishDate.Reverse ".Kind" "page") ".Type" "not in" $dontRender )) }}
                     <li>
-                        <a href="{{ .Permalink }}">{{ .Title }}</a>
+                        <a href="{{ .Permalink }}">
+                            <span>{{ dateFormat "2006-01-02" .Date }}</span>
+                            {{ .Title }}
+                        </a>
                     </li>
                 {{ end }}
             </ul>

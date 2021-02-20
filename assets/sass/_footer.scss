@@ -31,12 +31,15 @@ footer {
       margin-top: 1.25em;
 
       li {
-        border-bottom: 1px solid $blue;
+        border-bottom: 1px solid $green;
         padding-right: 10px;
         padding-bottom: 5px;
       }
-
       a {
+        span {
+          color: $yellow;
+        }
+
         position: relative;
         left: 0;
         display: inline-block;
