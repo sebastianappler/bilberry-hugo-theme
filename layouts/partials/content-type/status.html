@@ -1,7 +1,3 @@
-<span class="bubble">
-    <i class="fas fa-fw {{ or .ctx.Params.icon "fa-comment" }}"></i>
-</span>
-
 <article class="status">
     {{ if .ctx.Resources.GetMatch "featuredImage.*" }}
         <div class="featured-image">
