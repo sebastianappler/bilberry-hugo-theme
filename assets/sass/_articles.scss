@@ -226,6 +226,7 @@ article {
         a {
           color: $yellow;
         }
+
         a:not(:last-child):after {
           content: " / ";
           color: $text-color !important;
