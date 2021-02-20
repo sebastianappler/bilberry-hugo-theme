@@ -24,6 +24,7 @@
 
     &:hover {
       color: $highlight-color;
+      text-decoration: underline;
     }
 
     &:focus {
@@ -39,6 +40,9 @@
       font-size: 0.9em;
       white-space: pre;
       overflow-x: auto;
+      background: $background;
+      color: $pink;
+      font-weight: normal;
     }
 
     .copy-button {
@@ -46,7 +50,7 @@
       position: absolute;
       top: 5px;
       right: 5px;
-      background: #f1f1f1;
+      background: $white;
       padding: 4px;
       font-size: 12pt;
       line-height: normal;
@@ -59,12 +63,13 @@
   }
 
   code {
-        font-family: 'Fira Code', monospace;
+    font-family: "Fira Code", monospace;
     border: 0;
     margin: 0;
     white-space: normal;
     background: $green;
     color: $background;
+    font-weight: bold;
   }
 
   .tooltipster-light {

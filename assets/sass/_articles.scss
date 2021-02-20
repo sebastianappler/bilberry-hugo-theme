@@ -44,6 +44,7 @@ article {
 
       a {
         font-style: normal;
+        color: $pink;
       }
     }
 
@@ -82,6 +83,7 @@ article {
 
       a {
         font-style: normal;
+        color: $blue;
       }
 
       span {
@@ -102,7 +104,7 @@ article {
     }
 
     a {
-      font-style: italic;
+      color: $yellow;
     }
 
     a.more {
@@ -116,6 +118,7 @@ article {
 
       &:hover {
         color: $continue-reading-hover-color;
+        text-decoration: underline;
       }
     }
 
@@ -131,7 +134,7 @@ article {
     }
 
     blockquote {
-      background-color: #f6f6f6;
+      background-color: $background-second;
       font-family: $headline-font;
       margin: 1.5em 0;
       padding: 2em;
@@ -220,7 +223,9 @@ article {
 
       .links {
         margin-left: 0.75em;
-
+        a {
+          color: $yellow;
+        }
         a:not(:last-child):after {
           content: " / ";
           color: $text-color !important;
