@@ -17,7 +17,11 @@
                 {{ end }}
             {{ end }}
         </ul>
-
+        <ul class="topnav socialnav">
+            {{ range .Site.Params.socialMediaLinks }}
+                <a href="{{ .link }}" target="_blank"><i class="{{ .icon }}"></i></a>
+            {{ end }}
+        </ul>
         {{ if and (isset .Site.Params "algolia_search") (eq .Site.Params.algolia_search true) }}
             <div id="search-box" class="search">
                 <i class="fas fa-search"></i>
